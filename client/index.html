@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark Fins Swimming Lessons</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wave-bg"></div>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="Shark Fins Logo" class="logo">
+            <h1>Dive Into <span>Fun!</span></h1>
+            <p class="subtitle">Book your personalized swimming lessons today</p>
+        </header>
+
+        <main>
+            <section class="booking-form">
+                <h2>Book Your Lesson</h2>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" placeholder="e.g. Maria" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="middleName">Middle Name (Optional)</label>
+                        <input type="text" id="middleName" placeholder="e.g. Santos">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="e.g. Dela Cruz" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthDate">Child's Birth Date</label>
+                        <input type="date" id="birthDate" required>
+                        <p class="hint">Must be at least 5 years old to enroll</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lessonDate">Preferred Lesson Date</label>
+                        <input type="date" id="lessonDate" required>
+                        <p class="hint">Available up to 3 months in advance</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instructor">Choose Your Instructor</label>
+                        <select id="instructor" required>
+                            <option value="">Select an instructor</option>
+                            <option value="Mary Grace C. Batalla">Coach Grace (Mary Grace C. Batalla – Two-time Palarong Pambansa Bronze Medalist, Batang Pinoy National Player, Hong Kong Competitor)</option>
+                            <option value="Jhon Bem C. Batalla">Coach Jhon Bem C. Batalla – DAVRAA Player, Batang Pinoy Player</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="cta-button">
+                        <span class="button-text">Book My Lesson</span>
+                        <span class="water-effect"></span>
+                    </button>
+                </form>
+            </section>
+
+            <section class="recent-bookings">
+                <h2>Recent Swimmers</h2>
+                <div id="bookingsList" class="bookings-grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
